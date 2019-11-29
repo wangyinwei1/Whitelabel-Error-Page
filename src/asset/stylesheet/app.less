@@ -1,0 +1,40 @@
+@import '~antd/lib/style/themes/default.less';
+
+.content-card {
+  margin: 16px 16px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+body {
+  font-family: 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.chart-tab {
+  .ant-tabs-ink-bar {
+    bottom: auto;
+  }
+  .ant-tabs-bar {
+    border-bottom: none;
+  }
+  .ant-tabs-nav-container-scrolling {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .ant-tabs-tab-prev-icon:before {
+    position: relative;
+    left: 6px;
+  }
+  .ant-tabs-tab-next-icon:before {
+    position: relative;
+    right: 6px;
+  }
+  .ant-tabs-tab-active h4 {
+    color: @primary-color;
+  }
+}
+// html body {
+//   --antd-wave-shadow-color: #17d08c !important;
+// }

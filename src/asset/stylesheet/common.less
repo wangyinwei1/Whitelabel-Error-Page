@@ -1,0 +1,87 @@
+.table-common() {
+  .table-wrap {
+    :global {
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td {
+        padding: 14px 16px;
+      }
+
+      .ant-table-thead > tr > th {
+        background-color: #108ee9;
+        border-bottom: 1px solid #108ee9;
+        color: #fff;
+      }
+      .ant-table-tbody > tr {
+        &:nth-child(2n) {
+          background-color: #f8f8f8;
+          td {
+            // border-color: #f8f8f8;
+          }
+        }
+        &:nth-child(2n + 1) {
+          background-color: #fff;
+          td {
+            // border-color: #fff;
+          }
+        }
+      }
+      .ant-table-content {
+        border-top: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        border-left: 1px solid #e8e8e8;
+      }
+    }
+  }
+}
+.table-common-white() {
+  .table-wrap {
+    :global {
+      .ant-table-thead > tr > th,
+      .ant-table-tbody > tr > td {
+        padding: 14px 16px;
+      }
+
+      .ant-table-thead > tr > th {
+        background-color: #fff;
+        border-bottom: 1px solid #fff;
+      }
+      .ant-table-tbody > tr {
+        &:nth-child(2n + 1) {
+          background-color: #f8f8f8;
+          td {
+            // border-color: #f8f8f8;
+            background-color: transparent;
+          }
+        }
+        &:nth-child(2n) {
+          background-color: #fff;
+          td {
+            background-color: transparent;
+            // border-color: #fff;
+          }
+        }
+      }
+      .ant-table-content {
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+      }
+    }
+  }
+}
+.toolbar-common() {
+  .toolbar-wrap {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    background: #fff;
+    margin-bottom: 16px;
+  }
+}
+.image-rendering() {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
